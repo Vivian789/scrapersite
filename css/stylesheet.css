@@ -98,6 +98,7 @@ MAIN COMPONENTS
 	display: flex;
 	width: 80%;
 	flex-flow: column;
+	flex: 1;
 }
 
 h2 {
@@ -156,6 +157,34 @@ HOME CONTACT COMPONENTS
 	background: -moz-linear-gradient(top,  #E3F4FD,  #D1D2D4);
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#E3F4FD', endColorstr='#D1D2D4');
 	border-radius: 10px;
+}
+
+/*
+***************
+PRICING COMPONENTS
+***************
+*/
+
+#price-container{
+	display: flex;
+	width: 100%;
+}
+
+.price{
+	background-color: #D1D2D4;
+	border-radius: 10px;
+	height: 100%;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	margin: 3px;
+}
+
+.number{
+	font-weight: bold;
+	font-size: 5em;
 }
 
 /*
