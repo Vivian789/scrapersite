@@ -2,6 +2,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -19,11 +20,15 @@ main {
 	display: flex;
 	flex: 5 0 auto;
 	flex-flow: column;
+	align-items: center;
+	background-color: #E3F4FD;
 }
 
 footer {
 	display: flex;
 	flex: 1;
+	width: 100%;
+	background-color: #D1D2D4;
 }
 
 /*
@@ -32,20 +37,55 @@ HEADER COMPONENTS
 ***************
 */
 
-h1 {
-}
-nav {
+.nav-container{
+	width: 100%;
 	display: flex;
-	border: 1px black solid;
-}
-
-#logo {
-	margin-left: auto;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
 #site-title {
 	align-self: center;
-	border: 1px black solid;
+	color: #3A3A3C;
+	font-size: 3em;
+}
+
+#site-title a {
+	text-decoration: none;
+	color: #3A3A3C;
+}
+
+.website {
+	color: black;
+}
+
+nav {
+	display: flex;
+	background-color: #D1D2D4;
+	font-weight: bold;
+	border-radius: 5px;
+	align-items: center;
+}
+
+nav a {
+	display: block;
+}
+
+tab {
+	text-align: center;
+	flex: 1;
+	font-size: 1.5em;
+	border-left: dotted 5px #E3F4FD;
+	padding: 3px;
+}
+
+tab a{
+	text-decoration: none;
+	color: #3A3A3C;
+}
+
+#logo {
+	margin-left: auto;
 }
 
 /*
@@ -56,11 +96,20 @@ MAIN COMPONENTS
 
 #main-content {
 	display: flex;
+	width: 80%;
+	flex-flow: column;
+}
+
+h2 {
+	text-align: center;
+	color: #3A3A3C;
 }
 
 #home-contact {
 	display: flex;
 }
+
+
 
 /*
 ***************
@@ -81,5 +130,52 @@ HOME CONTACT COMPONENTS
 #home-contact-form {
 	display: flex;
 	flex-flow: column;
-	width: 100%;
+	border-radius: 10px;
+	width: 500px;
+	background-color: #D1D2D4;
+	padding: 20px;
+	text-decoration: bold;
 }
+
+#home-contact-form label{
+	color: #3A3A3C;
+	font-weight: bold;
+}
+
+#home-contact input{
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 12px;
+}
+
+#submit {
+	background-color: #E3F4FD;
+	font-weight: bold;
+	padding: 3px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#E3F4FD), to(#D1D2D4));
+	background: -moz-linear-gradient(top,  #E3F4FD,  #D1D2D4);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#E3F4FD', endColorstr='#D1D2D4');
+	border-radius: 10px;
+}
+
+/*
+***************
+FAQ COMPONENTS
+***************
+*/
+
+.q{
+	background-color: #D1D2D4;
+	color: white;
+	font-size: 1.5em;
+	display: inline-block;
+	padding: 3px 5px;
+	border-radius: 5px;
+	margin: 3px;
+}
+
+.answer{
+	margin-left: auto;
+	width: 95%;
+}
+
