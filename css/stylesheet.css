@@ -1,3 +1,10 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
 body {
   display: flex;
   min-height: 100vh;
@@ -14,6 +21,7 @@ BODY COMPONENTS
 
 header {
 	display: flex;
+	background-color: white;
 }
 
 main {
@@ -21,14 +29,14 @@ main {
 	flex: 5 0 auto;
 	flex-flow: column;
 	align-items: center;
-	background-color: #E3F4FD;
+	background-color: #fbfdff;
 }
 
 footer {
 	display: flex;
 	flex: 1;
 	width: 100%;
-	background-color: #D1D2D4;
+	background-color: #E3F4FD;
 }
 
 /*
@@ -61,7 +69,7 @@ HEADER COMPONENTS
 
 nav {
 	display: flex;
-	background-color: #D1D2D4;
+	background-color: #B3E1FA;
 	font-weight: bold;
 	border-radius: 5px;
 	align-items: center;
@@ -98,6 +106,7 @@ MAIN COMPONENTS
 	display: flex;
 	width: 80%;
 	flex-flow: column;
+	flex: 1;
 }
 
 h2 {
@@ -132,7 +141,7 @@ HOME CONTACT COMPONENTS
 	flex-flow: column;
 	border-radius: 10px;
 	width: 500px;
-	background-color: #D1D2D4;
+	background-color: #B3E1FA;
 	padding: 20px;
 	text-decoration: bold;
 }
@@ -148,14 +157,41 @@ HOME CONTACT COMPONENTS
 	margin-bottom: 12px;
 }
 
-#submit {
-	background-color: #E3F4FD;
-	font-weight: bold;
-	padding: 3px;
-	background: -webkit-gradient(linear, left top, left bottom, from(#E3F4FD), to(#D1D2D4));
-	background: -moz-linear-gradient(top,  #E3F4FD,  #D1D2D4);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#E3F4FD', endColorstr='#D1D2D4');
+input[type=submit] {
+    border-radius: 5px;
+    border: 0;
+    font-family: inherit;
+    font-weight: bold;
+    width: 80px;
+    height:25px;
+    background: #E3F4FD;
+}
+/*
+***************
+PRICING COMPONENTS
+***************
+*/
+
+#price-container{
+	display: flex;
+	width: 100%;
+}
+
+.price{
+	background-color: #9bd8f8;
 	border-radius: 10px;
+	height: 100%;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	margin: 3px;
+}
+
+.number{
+	font-weight: bold;
+	font-size: 5em;
 }
 
 /*
@@ -165,8 +201,8 @@ FAQ COMPONENTS
 */
 
 .q{
-	background-color: #D1D2D4;
-	color: white;
+	background-color: #B3E1FA;
+	color: #E3F4FD;
 	font-size: 1.5em;
 	display: inline-block;
 	padding: 3px 5px;
